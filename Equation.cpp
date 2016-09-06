@@ -1,3 +1,4 @@
+//вычисление квадратного уравнения
 #include<iostream>
 #include<math.h>
 #include<conio.h>
