@@ -17,32 +17,32 @@ public:
 	{
 		i = x;
 	}
-	Base operator+(Base&a);
-	Base operator-(Base&a);
-	Base operator*(Base&a);
-	Base operator/(Base&a);
+	Base operator+(const Base&a);
+	Base operator-(const Base&a);
+	Base operator*(const Base&a);
+	Base operator/(const Base&a);
 	
 	
 };
-Base Base::operator+(Base&a)
+Base Base::operator+(const Base&a)
 {
 	Base res;
 	res.x = x + a.x;
 		return res;
 }
-Base Base ::operator-(Base&a)
+Base Base ::operator-(const Base&a)
 {
 	Base res;
 	res.x =x- a.x;
 	return res;
 }
-Base Base::operator*(Base&a)
+Base Base::operator*(const Base&a)
 {
 	Base res;
 	res.x = x*a.x;
 	return res;
 }
-Base Base::operator/(Base&a)
+Base Base::operator/(const Base&a)
 {
 	Base res;
 	assert(a.x!=NULL);
